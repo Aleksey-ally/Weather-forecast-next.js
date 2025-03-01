@@ -7,7 +7,7 @@ import {Humidity, SpeedWind, Sunrise, Sunset} from "@/assets/icons";
 // import {Forecast} from "./Forecast";
 // import {Preloader} from "@/components/Preloader";
 import {useTranslation} from "react-i18next";
-import {LanguageSwitcher} from "@/components/LanguageSwitcher/LanguageSwitcher.tsx";
+// import {LanguageSwitcher} from "@/components/LanguageSwitcher/LanguageSwitcher.tsx";
 
 export const Weather = () => {
     const [isFetching, setIsFetching] = useState<boolean>(false);
