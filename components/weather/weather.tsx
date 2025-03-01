@@ -72,7 +72,7 @@ export const Weather = () => {
         <>
             <div className={s.card}>
                 <div className={s.cardLogo}>
-                    <img src={weatherLogo} alt="weather-logo"/>
+                    <Image src={weatherLogo} alt="weather-logo" width={60}/>
                 </div>
                 <div className={s.langs}>
                     <LanguageSwitcher/>

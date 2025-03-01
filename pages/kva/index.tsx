@@ -23,16 +23,9 @@ export default function Home() {
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
-            <div
-                className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}
-            >
-                <main className={styles.main}>
-                    <Weather/>
-                </main>
-                <footer className={styles.footer}>
-
-                </footer>
-            </div>
+            <main>
+                <Weather/>
+            </main>
         </>
     );
 }
