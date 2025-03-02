@@ -5,7 +5,7 @@ import {ForecastDataList, WeatherData} from "@/api/weather/weather.types";
 import weatherLogo from "@/assets/imgs/weatherLogo.png";
 import {Humidity, SpeedWind, Sunrise, Sunset} from "@/assets/icons";
 // import {Forecast} from "./Forecast";
-// import {Preloader} from "@/components/Preloader";
+import {Preloader} from "@/components/preloader";
 import {useTranslation} from "react-i18next";
 import {LanguageSwitcher} from "@/components/language-switcher";
 import Image from "next/image";
@@ -53,7 +53,7 @@ export const Weather = () => {
         fetchWeatherData(searchInput);
     };
 
-    // if (isFetching) return <Preloader/>;
+    if (isFetching) return <Preloader/>;
 
     const dayOptions: Intl.DateTimeFormatOptions = {
         weekday: 'long',
