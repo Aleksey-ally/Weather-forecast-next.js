@@ -1,6 +1,7 @@
 import s from "./forecast.module.scss";
 import {Humidity, SpeedWind} from "@/public/icons";
 import {useTranslation} from "react-i18next";
+import Image from "next/image";
 
 
 type Forecast = {
@@ -34,7 +35,7 @@ export const Forecast = ({
             <div className={s.dayTemperatureWrapper}>
                 <p className={s.day}>{day}</p>
                 <div className={s.temperature}>{temperature}°</div>
-                <img src={icon} alt="Weather icon" className={s.weatherIcon}/>
+                <Image src={icon} alt="Weather icon" width={80} height={80}/>
                 <p className={s.condition}>{condition}</p>
             </div>
 

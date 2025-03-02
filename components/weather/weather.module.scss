@@ -144,6 +144,7 @@
 .forecastWrapper {
   display: flex;
   flex-direction: column;
+  text-align: start;
   .forecast{
     display: flex;
     flex-wrap: wrap;

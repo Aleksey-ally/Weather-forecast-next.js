@@ -6,7 +6,7 @@
   position: relative;
   background-size: 200% 200%;
   animation: gradientAnimation 5s ease infinite;
-  width: 13rem;
+  width: 11rem;
   border-radius: 15px;
   padding: 20px;
   height: 21.25rem;
@@ -33,11 +33,6 @@
       font-size: 64px;
       font-weight: bold;
       line-height: 1;
-    }
-
-    .weatherIcon {
-      width: 80px;
-      height: 80px;
     }
 
     .condition {
