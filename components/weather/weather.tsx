@@ -4,7 +4,7 @@ import {weatherAPI} from "@/api/weather/weather.api.ts";
 import {ForecastDataList, WeatherData} from "@/api/weather/weather.types";
 import weatherLogo from "@/public/imgs/weatherLogo.png";
 import {Humidity, SpeedWind, Sunrise, Sunset} from "@/public/icons";
-// import {Forecast} from "./Forecast";
+import {Forecast} from "@/components/forecast";
 import {Preloader} from "@/components/preloader";
 import {useTranslation} from "react-i18next";
 import {LanguageSwitcher} from "@/components/language-switcher";
@@ -159,20 +159,20 @@ export const Weather = () => {
                 <div className={s.forecastWrapper}>
                     <h2>{t("weatherPage.header")}</h2>
                     <div className={s.forecast}>
-                        {/*{forecast.map((day, index) => (*/}
+                        {forecast.map((day, index) => (
 
-                        {/*    <Forecast key={index}*/}
-                        {/*              day={new Date(day.dt * 1000).toLocaleDateString(`${i18n.language}-${i18n.language.toUpperCase()}`, {*/}
-                        {/*                  weekday: "short",*/}
-                        {/*              })}*/}
-                        {/*              temperature={Math.round(day.main.temp)}*/}
-                        {/*              windSpeed={day.wind.speed} humidity={day.main.humidity}*/}
-                        {/*              maxTemp={Math.round(day.main.temp_max)}*/}
-                        {/*              minTemp={Math.round(day.main.temp_min)}*/}
-                        {/*              condition={day.weather[0].description}*/}
-                        {/*              icon={`http://openweathermap.org/img/wn/${day.weather[0].icon}.png`}/>*/}
+                            <Forecast key={index}
+                                      day={new Date(day.dt * 1000).toLocaleDateString(`${i18n.language}-${i18n.language.toUpperCase()}`, {
+                                          weekday: "short",
+                                      })}
+                                      temperature={Math.round(day.main.temp)}
+                                      windSpeed={day.wind.speed} humidity={day.main.humidity}
+                                      maxTemp={Math.round(day.main.temp_max)}
+                                      minTemp={Math.round(day.main.temp_min)}
+                                      condition={day.weather[0].description}
+                                      icon={`http://openweathermap.org/img/wn/${day.weather[0].icon}.png`}/>
 
-                        {/*))}*/}
+                        ))}
                     </div>
                 </div>
             )}
