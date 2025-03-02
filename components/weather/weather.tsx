@@ -2,8 +2,8 @@ import s from './weather.module.scss'
 import {FormEvent, useEffect, useState} from "react";
 import {weatherAPI} from "@/api/weather/weather.api.ts";
 import {ForecastDataList, WeatherData} from "@/api/weather/weather.types";
-import weatherLogo from "@/assets/imgs/weatherLogo.png";
-import {Humidity, SpeedWind, Sunrise, Sunset} from "@/assets/icons";
+import weatherLogo from "@/public/imgs/weatherLogo.png";
+import {Humidity, SpeedWind, Sunrise, Sunset} from "@/public/icons";
 // import {Forecast} from "./Forecast";
 import {Preloader} from "@/components/preloader";
 import {useTranslation} from "react-i18next";
